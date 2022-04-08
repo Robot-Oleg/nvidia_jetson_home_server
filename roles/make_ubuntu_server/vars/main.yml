@@ -1,0 +1,39 @@
+---
+# vars file for make_ububntu_server
+gui_packages:
+  - libreoffice*
+  - ubuntu-desktop
+  - autilus 
+  - nautilus-*
+  - gnome-power-manager
+  - gnome-screensaver
+  - gnome-termina*
+  - gnome-pane*
+  - gnome-applet*
+  - gnome-bluetooth
+  - gnome-desktop*
+  - gnome-sessio*
+  - gnome-user*
+  - gnome-shell-common
+  - zeitgeist-core
+  - libzeitgeist*
+  - gnome-control-center
+  - gnome-screenshot
+  - libreoffice-core
+  - snapd
+  - lightdm
+  - cups
+  - chromium*
+  - libcurlpp0
+
+gui_folders:
+  - "/home/{{username}}/Desktop"
+  - "/home/{{username}}/Documents"
+  - "/home/{{username}}/Downloads"
+  - "/home/{{username}}/Public"
+  - "/home/{{username}}/Videos"
+  - "/home/{{username}}/Classes"
+  - "/home/{{username}}/Music"
+  - "/home/{{username}}/examples.desktop"
+  - "/home/{{username}}/Templates/"
+  - "/home/{{username}}/Pictures"

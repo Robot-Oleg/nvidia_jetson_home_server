@@ -1,0 +1,13 @@
+---
+# tasks file for make_ububntu_server
+- name: Delete gui pkgs
+  apt:
+    name: "{{ gui_packages }}"
+    state: absent
+    force: true
+
+- name: Delete all unnecessary folders
+  file:
+    path: "{{ item }}"
+    state: absent
+  with_items: "{{ gui_folders }}"
